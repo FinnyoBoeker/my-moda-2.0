@@ -1,0 +1,13 @@
+{
+  "name": "my-moda-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One-Page-Website für My Moda, Schorndorf",
+  "scripts": {
+    "start": "npx serve .",
+    "build:css": "tailwindcss -c tailwind.config.js -i ./src/input.css -o ./css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

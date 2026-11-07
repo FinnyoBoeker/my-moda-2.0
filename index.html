@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Moda – Mode mitten in Schorndorf</title>
+<meta name="description" content="My Moda – Modegeschäft am Marktplatz 11 in Schorndorf. Aktuelle Damen- und Herrenmode, Accessoires, Taschen und Schuhe, persönliche Stilberatung.">
+<link rel="canonical" href="https://DEINE-DOMAIN.de/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="My Moda – Mode mitten in Schorndorf">
+<meta property="og:description" content="Aktuelle Mode direkt am Marktplatz Schorndorf: Outfits, Accessoires und persönliche Beratung.">
+<meta property="og:url" content="https://DEINE-DOMAIN.de/">
+<meta property="og:image" content="https://DEINE-DOMAIN.de/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind-config.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "My Moda",
+  "telephone": "+49 7181 4820737",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Marktplatz 11",
+    "postalCode": "73614",
+    "addressLocality": "Schorndorf",
+    "addressCountry": "DE"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00" }
+  ]
+}
+</script>
+</head>
+<body class="bg-paper text-ink-900 font-sans antialiased">
+
+<!-- Header -->
+<header class="fixed inset-x-0 top-0 z-50 bg-paper/90 backdrop-blur border-b border-nude-200">
+  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
+    <a href="#start" class="font-display text-2xl tracking-tight">My Moda</a>
+    <nav class="hidden md:flex items-center gap-8 text-[15px]" aria-label="Hauptnavigation">
+      <a href="#start" class="hover:text-nude-400 transition-colors">Startseite</a>
+      <a href="#ueber-uns" class="hover:text-nude-400 transition-colors">Über uns</a>
+      <a href="#anfahrt" class="hover:text-nude-400 transition-colors">Anfahrt</a>
+      <a href="#kontakt" class="hover:text-nude-400 transition-colors">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+4971814820737" class="hidden sm:inline-flex rounded-full bg-ink-900 px-5 py-2 text-sm font-medium text-paper hover:bg-ink-800 transition-colors">Jetzt anrufen</a>
+      <button id="menuBtn" class="md:hidden p-2" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobileMenu" class="hidden md:hidden border-t border-nude-200 bg-paper px-5 py-4" aria-label="Mobile Navigation">
+    <ul class="flex flex-col gap-4 text-lg">
+      <li><a href="#start" class="block">Startseite</a></li>
+      <li><a href="#ueber-uns" class="block">Über uns</a></li>
+      <li><a href="#anfahrt" class="block">Anfahrt</a></li>
+      <li><a href="#kontakt" class="block">Kontakt</a></li>
+      <li><a href="tel:+4971814820737" class="inline-block rounded-full bg-ink-900 px-5 py-2 text-base text-paper">Jetzt anrufen</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- Hero -->
+<section id="start" class="relative overflow-hidden bg-ink-900 pt-16 text-paper">
+  <div class="pointer-events-none absolute -right-24 top-20 h-96 w-96 rounded-full bg-nude-400/20 blur-3xl" aria-hidden="true"></div>
+  <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-12 lg:py-24">
+    <div class="lg:col-span-7">
+      <h1 class="rise font-display text-5xl leading-[1.05] sm:text-6xl lg:text-7xl">
+        My Moda
+        <span class="mt-2 block text-nude-300 italic">Mode mitten in Schorndorf</span>
+      </h1>
+      <p class="rise mt-8 max-w-xl text-lg font-light leading-relaxed text-nude-100" style="--d:.15s">
+        Entdecke aktuelle Mode direkt am Marktplatz. Bei My Moda findest du sorgfältig ausgewählte Outfits, Accessoires und persönliche Beratung – nur wenige Minuten vom Bahnhof entfernt.
+      </p>
+      <div class="rise mt-10 flex flex-wrap gap-4" style="--d:.3s">
+        <a href="#anfahrt" class="rounded-full bg-nude-300 px-8 py-4 text-base font-medium text-ink-900 transition hover:-translate-y-0.5 hover:bg-nude-200">Jetzt vorbeischauen</a>
+        <a href="tel:+4971814820737" class="rounded-full border border-nude-400 px-8 py-4 text-base font-medium transition hover:-translate-y-0.5 hover:bg-ink-800">07181 4820737</a>
+      </div>
+    </div>
+    <div class="rise relative mx-auto w-full max-w-sm lg:col-span-5" style="--d:.25s">
+      <!-- Eigenes Foto: assets/images/hero.jpg (wird automatisch angezeigt) -->
+      <div class="float photo zoom aspect-[4/5] rounded-t-full shadow-2xl">
+        <img src="assets/illustrations/rack.svg" alt="" aria-hidden="true">
+        <img src="assets/images/hero.jpg" alt="My Moda am Marktplatz in Schorndorf" onerror="this.remove()">
+      </div>
+      <div class="spin-slow absolute -bottom-6 -left-4 flex h-28 w-28 items-center justify-center rounded-full bg-nude-300 text-ink-900 sm:-left-10" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="h-full w-full"><defs><path id="circ" d="M60 60m-42 0a42 42 0 1 1 84 0a42 42 0 1 1-84 0"/></defs><text font-size="11" letter-spacing="1.5" fill="currentColor" font-family="Jost, sans-serif"><textPath href="#circ" textLength="255">MY MODA · SCHORNDORF · MARKTPLATZ ·</textPath></text></svg>
+        <svg class="absolute h-8 w-8" viewBox="0 0 64 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 14V11a4.5 4.5 0 1 0-4.5-4.5"/><path d="M32 14 4 36a2.5 2.5 0 0 0 1.5 4.5h53A2.5 2.5 0 0 0 60 36z"/></svg>
+      </div>
+    </div>
+  </div>
+  <div class="relative bg-nude-200 text-ink-900">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-10 md:grid-cols-3 md:items-center">
+      <p class="text-base leading-relaxed">Marktplatz 11, 73614 Schorndorf<br>Telefon: <a href="tel:+4971814820737" class="underline underline-offset-4">07181 4820737</a></p>
+      <div>
+        <p class="font-display text-xl">Öffnungszeiten</p>
+        <p class="mt-1 text-[15px] leading-7">Montag–Freitag: 09:00–18:30 Uhr<br>Samstag: 09:00–18:00 Uhr<br>Sonntag: geschlossen</p>
+      </div>
+      <div class="md:justify-self-end">
+        <p data-open-badge class="inline-flex items-center gap-3 rounded-full bg-paper px-5 py-3 text-[15px] font-medium"><span data-dot class="pulse-dot h-2.5 w-2.5 rounded-full bg-ink-600"></span><span data-label>Öffnungszeiten ansehen</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Über uns -->
+<section id="ueber-uns" class="mx-auto max-w-6xl px-5 py-20 sm:py-28">
+  <div class="grid gap-14 lg:grid-cols-12 lg:items-center">
+    <div class="reveal relative mx-auto w-full max-w-md pb-16 lg:col-span-6 lg:max-w-none">
+      <!-- Eigene Fotos: assets/images/laden-innen.jpg und assets/images/schaufenster.jpg -->
+      <div class="photo zoom aspect-[4/5] w-3/4 rounded-t-full">
+        <img src="assets/illustrations/window.svg" alt="" aria-hidden="true">
+        <img src="assets/images/laden-innen.jpg" alt="Blick in den Laden von My Moda" onerror="this.remove()">
+      </div>
+      <div class="photo zoom absolute bottom-0 right-0 aspect-[4/5] w-1/2 rounded-t-full border-8 border-paper">
+        <img src="assets/illustrations/bag.svg" alt="" aria-hidden="true">
+        <img src="assets/images/schaufenster.jpg" alt="Schaufenster von My Moda" onerror="this.remove()">
+      </div>
+    </div>
+    <div class="reveal lg:col-span-6 lg:pl-6" style="--d:.15s">
+      <h2 class="font-display text-4xl sm:text-5xl">Über uns</h2>
+      <div class="mt-6 h-px w-20 bg-nude-400"></div>
+      <p class="mt-8 max-w-xl text-lg leading-8 text-ink-600">
+        My Moda ist dein Modegeschäft in der Schorndorfer Innenstadt. Direkt am Marktplatz gelegen, bieten wir dir eine persönliche Beratung und eine Auswahl an Mode für deinen Alltag. Ob neues Lieblingsoutfit, Accessoires oder eine passende Ergänzung zu deinem Stil – bei uns findest du Mode zum Anprobieren und Entdecken.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Laufband -->
+<div class="overflow-hidden bg-ink-900 py-5 text-nude-300" aria-hidden="true">
+  <div class="marquee-track flex w-max whitespace-nowrap font-display text-2xl italic sm:text-3xl">
+    <span class="px-6">My Moda · Mode mitten in Schorndorf · Marktplatz 11 · Persönliche Beratung · </span>
+    <span class="px-6">My Moda · Mode mitten in Schorndorf · Marktplatz 11 · Persönliche Beratung · </span>
+    <span class="px-6">My Moda · Mode mitten in Schorndorf · Marktplatz 11 · Persönliche Beratung · </span>
+    <span class="px-6">My Moda · Mode mitten in Schorndorf · Marktplatz 11 · Persönliche Beratung · </span>
+  </div>
+</div>
+
+<!-- Anfahrt -->
+<section id="anfahrt" class="mx-auto max-w-6xl px-5 py-20 sm:py-28">
+  <h2 class="reveal font-display text-4xl sm:text-5xl">Besuch uns</h2>
+  <div class="mt-12 grid gap-10 lg:grid-cols-2">
+    <div class="reveal">
+      <p class="font-display text-2xl">My Moda</p>
+      <address class="mt-3 text-lg not-italic leading-8 text-ink-600">
+        Marktplatz 11, 73614 Schorndorf<br>
+        Telefon: <a href="tel:+4971814820737" class="underline underline-offset-4">07181 4820737</a>
+      </address>
+      <p class="mt-6 max-w-md text-lg leading-8 text-ink-600">Der Laden liegt zentral am Marktplatz und ist vom Bahnhof Schorndorf aus bequem zu Fuß erreichbar.</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=My+Moda+Marktplatz+11+73614+Schorndorf" target="_blank" rel="noopener" class="mt-8 inline-block rounded-full bg-ink-900 px-8 py-4 text-base font-medium text-paper hover:bg-ink-800 transition-colors">Auf Google Maps öffnen</a>
+    </div>
+    <div class="reveal rounded-2xl bg-nude-100 p-8" style="--d:.15s">
+      <p class="font-display text-2xl">Öffnungszeiten</p>
+      <dl class="mt-4 divide-y divide-nude-300 border-y border-nude-300 text-base">
+        <div class="flex justify-between gap-4 py-4"><dt>Montag–Freitag</dt><dd>09:00–18:30 Uhr</dd></div>
+        <div class="flex justify-between gap-4 py-4"><dt>Samstag</dt><dd>09:00–18:00 Uhr</dd></div>
+        <div class="flex justify-between gap-4 py-4"><dt>Sonntag</dt><dd>geschlossen</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section id="kontakt" class="bg-nude-200 py-20 sm:py-28">
+  <div class="reveal mx-auto max-w-3xl px-5 text-center">
+    <h2 class="font-display text-4xl sm:text-5xl">Kontakt</h2>
+    <p class="mx-auto mt-8 max-w-2xl text-lg leading-8 text-ink-800">
+      Hast du eine Frage zu aktuellen Kollektionen, Verfügbarkeiten oder Öffnungszeiten? Ruf uns gerne an unter 07181 4820737 oder schau direkt im Laden vorbei.
+    </p>
+    <div class="mt-10 flex flex-wrap justify-center gap-4">
+      <a href="tel:+4971814820737" class="rounded-full bg-ink-900 px-8 py-4 text-base font-medium text-paper hover:bg-ink-800 transition-colors">07181 4820737</a>
+      <a href="#anfahrt" class="rounded-full border border-ink-900 px-8 py-4 text-base font-medium hover:bg-nude-300 transition-colors">Jetzt vorbeischauen</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-ink-900 text-nude-100">
+  <div class="mx-auto max-w-6xl px-5 py-12">
+    <p class="font-display text-2xl text-paper">My Moda</p>
+    <p class="mt-4 text-[15px] leading-7">My Moda | Marktplatz 11 | 73614 Schorndorf | Telefon: <a href="tel:+4971814820737" class="underline underline-offset-4">07181 4820737</a></p>
+    <p class="text-[15px] leading-7">Montag–Freitag: 09:00–18:30 Uhr | Samstag: 09:00–18:00 Uhr</p>
+    <nav class="mt-6 flex gap-6 border-t border-ink-600 pt-6 text-[15px]" aria-label="Rechtliches">
+      <a href="impressum.html" class="hover:text-nude-300">Impressum</a>
+      <a href="datenschutz.html" class="hover:text-nude-300">Datenschutz</a>
+      <a href="#kontakt" class="hover:text-nude-300">Kontakt</a>
+    </nav>
+  </div>
+</footer>
+
+<a href="tel:+4971814820737" class="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-ink-900 text-paper shadow-lg sm:hidden" aria-label="Jetzt anrufen"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></a>
+<script src="js/main.js"></script>
+</body>
+</html>
